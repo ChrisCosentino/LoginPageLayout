@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+:root {
+  --light-black-color: #373737;
+  --green-color: #43e87b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.content {
+  background-color: blue;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.form-container {
+  background-color: #000000;
+  color: white;
+  padding: 30px;
+}
+
+.download-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--light-black-color);
+  margin-top: 20px;
+}
+.download-container > img {
+  margin-bottom: 20px;
+}
+
+.brand-container {
+  padding: 30px;
+  background-color: var(--green-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  padding: 30px;
+  margin-top: 2rem;
+}
+
+form > h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.password-container {
+  /* background-color: blue; */
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.text-input {
+  background-color: var(--light-black-color);
+  border: none;
+  height: 55px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.checkbox {
+  color: #ddd;
+}
+
+.submit-btn {
+  height: 55px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  letter-spacing: 4px;
+  background-color: var(--green-color);
+  margin-top: 10px;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.slogan {
+  font-weight: 300;
+}
+.img {
+  width: 80%;
+}
+
+.company {
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 1.9rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .brand-container {
+    display: none;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
