@@ -119,6 +119,9 @@ form > h1 {
   letter-spacing: 3px;
   font-size: 1.9rem;
 }
+.company > span {
+  color: var(--green-color);
+}
 
 @media only screen and (max-width: 760px) {
   .brand-container {
